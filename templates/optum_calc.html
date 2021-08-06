@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <title> Optum Hackathon | Drug Prediction </title>
+{% endblock %}
+
+{% block body %}
+<section class="contact-section" style = "padding: 10px 0 140px;">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title"> Optum Hackathon - Drug Prediction </h2>
+                    </div>
+                    <div class="col-lg-7">
+                        <form class="form-contact contact_form" action="" method="post" id="contactForm">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="gender" style="font-size: 16px;"> Gender </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <select class="form-control" name="gender" id="gender">
+                                            <option value=1>   Female  </option>
+                                            <option value=0>  Male  </option>
+					                    </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="age" style="font-size: 16px;"> Age  </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <input class="form-control" name="age" id="subject" type="number" min=10 placeholder="Enter age in years ">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="age" style="font-size: 16px;"> Height(in inches) </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <input class="form-control" name="height" id="subject" type="number" min=0  max=250>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="age" style="font-size: 16px;"> Weight(in lbs) </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <input class="form-control" name="weight" id="subject" type="number"  min=0  max=200>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >
+                                        <label for="activity" style="font-size: 16px;"> Cancer Type </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <select class="form-control" name="cancer" id="activity">
+                                            <option value="10">   Acute Lymph Leukemia  </option>
+                                            <option value="35">  Bcell Gastric  </option>
+                                            <option value="40">  Bcell nonGastric  </option>
+                                            <option value="60">   Breast Cancer </option>
+                                            <option value="80">    Colon Cancer </option>
+                                            <option value="90">   Kidney Cancer </option>
+                                            <option value="100">  WaldnMacroLymphLymph </option>
+                                            <option value="110">  Soft Tissue Sarcoma  </option>
+					                    </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mt-5">
+                                <button type="submit" class="button button-contactForm boxed-btn"> Predict Drug </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5"  >
+                        <img src="{% static 'img/f3.jpg' %}" style="height: 350px; opacity: 0.8;" height=350px>   </img>
+
+                    </div>
+                </div>
+            </div>
+</section>
+{% endblock %}

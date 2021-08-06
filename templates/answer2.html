@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <title> Optum Hackathon | Result </title>
+{% endblock %}
+
+{% block body %}
+  <section class="contact-section" style = "padding: 10px 0 140px;">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-7">
+                        <br>
+                        <h2 class="contact-title"> Drugs and Dosage Suggestion-  </h2>
+                          Hello dear..
+                        <br>
+                            We have received the following data -
+                            <br>
+                            <div class="row">
+                                <div class="col-3"> Gender  </div>
+                                <div class="col-7">  {{ gender }}   </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3"> Age </div>
+                                <div class="col-7"> {{ age }} years  </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-3">  Height   </div>
+                                <div class="col-7">   {{ height }} inches    </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">  Weight  </div>
+                                <div class="col-7">  {{ weight }} lbs  </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">  Cancer Type </div>
+                                <div class="col-7">  {{ cancer }}  </div>
+                            </div>
+
+                            <br>  Our results - <br>
+                            Recommended Drug : {{ drug }}  <br>
+                            Recommended Dosage : {{ dose }} mg
+                            <br>
+                            <br>
+                            <br>
+
+                        If you haven't created an account at <strong> DietCheck </strong> yet,
+                        <br>
+                        please register below and monitor your daily diet chart.
+
+                            <div class="form-group mt-5">
+                                <button type="submit" class="button button-contactForm boxed-btn"> Register </button>
+                            </div>
+
+                    </div>
+                    <div class="col-lg-5"  >
+                        <img src="{% static 'img/f3.jpg' %}" style="height: 350px; opacity: 0.8;" height=300px>   </img>
+
+                    </div>
+                </div>
+            </div>
+</section>
+{% endblock %}

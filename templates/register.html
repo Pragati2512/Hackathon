@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <title> Diet Check | Register </title>
+{% endblock %}
+
+{% block body %}
+    <section class="contact-section" style = "padding: 10px 0 140px;">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title"> Register </h2>
+                    </div>
+                    <div class="col-lg-7">
+                        <form class="form-contact contact_form" action="" method="post" id="contactForm">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >
+                                        <label for="activity" style="font-size: 16px;"> Username </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <input class="form-control" name="username" id="user" type="text"
+                                        placeholder="Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >
+                                        <label for="pas1" style="font-size: 16px;"> Enter Password </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <input class="form-control" name="password1" id="pas1" type="password"
+                                        placeholder="Your password here">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >
+                                        <label for="pas2" style="font-size: 16px;"> Password Confirmation </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <input class="form-control" name="password2" id="subject" type="password"
+                                        placeholder="Re-Enter Password for confirmation">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >
+                                        <label for="pas1" style="font-size: 16px;"> Contact Number </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <input class="form-control" name="phone" id="subject" type="number"
+                                        placeholder=" Phone Number ">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >
+                                        <label for="pas1" style="font-size: 16px;"> Age / DOB </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <select class="form-control" name="gender" >
+                                            <option value="Male">   Male  </option>
+                                            <option value="Female">   Female </option>
+					                    </select>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <input class="form-control" name="date" id="subject" type="date"
+                                        placeholder="Your Birthday comes on.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >
+                                        <label for="pas1" style="font-size: 16px;"> Height / Weight </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <input class="form-control" name="height" id="subject" type="number"
+                                        placeholder="Height(in cms)">
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <input class="form-control" name="weight" id="subject" type="number"
+                                        placeholder="Weight(in kgs)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >
+                                        <label for="activity" style="font-size: 16px;"> Physical Activity Level </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <select class="form-control" name="active" id="activity">
+                                            <option value="High">   Highly Active  </option>
+                                            <option value="Mid">  Moderate Active  </option>
+                                            <option value="Low">   Less Active </option>
+					                    </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mt-5">
+                                <button type="submit" class="button button-contactForm boxed-btn"> Register </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="{% static 'img/f3.jpg' %}" style="height: 350px; opacity: 0.8;" height=350px>   </img>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+{% endblock %}

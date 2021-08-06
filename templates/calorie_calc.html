@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <title> Diet Check | Calorie Calculator </title>
+{% endblock %}
+
+{% block body %}
+<section class="contact-section" style = "padding: 10px 0 140px;">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title"> Calorie Calculator </h2>
+                    </div>
+                    <div class="col-lg-7">
+                        <form class="form-contact contact_form" action="" method="post" id="contactForm">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="gender" style="font-size: 16px;"> Gender </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <select class="form-control" name="gender" id="gender">
+                                            <option value=1>   Female  </option>
+                                            <option value=0>  Male  </option>
+					                    </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="age" style="font-size: 16px;"> Birth Date </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <input class="form-control" name="age" id="subject" type="date"
+                                        placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="age" style="font-size: 16px;"> Height(in cms) </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <input class="form-control" name="height" id="subject" type="number" min=100  max=250>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="age" style="font-size: 16px;"> Weight(in kgs) </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <input class="form-control" name="weight" id="subject" type="number"  min=20  max=200>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >
+                                        <label for="activity" style="font-size: 16px;"> Physical Activity Level </label>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <select class="form-control" name="active" id="activity">
+                                            <option value="High">   Highly Active  </option>
+                                            <option value="Mid">  Moderate Active  </option>
+                                            <option value="Low">   Less Active </option>
+					                    </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mt-5">
+                                <button type="submit" class="button button-contactForm boxed-btn"> Calculate </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5"  >
+                        <img src="{% static 'img/f3.jpg' %}" style="height: 350px; opacity: 0.8;" height=350px>   </img>
+
+                    </div>
+                </div>
+            </div>
+</section>
+{% endblock %}

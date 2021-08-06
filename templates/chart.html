@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <title> Diet Check | Personel Chart </title>
+
+
+
+{% endblock %}
+
+{% block body %}
+  <section class="contact-section" style = "padding: 10px 0 140px;">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title"> My Diet Chart for last week. </h2>
+                    </div>
+                    <div class="col-lg-7"style="min-height:600px">
+
+                                <h4> Calorie Intake in last week </h4>
+                                <div style="height:580px; width:120%; opacity:0.7;" >
+                                    <canvas id="bar-chart" style="height:580px; width:120%;" > </canvas>
+                                </div>
+                                <ul class="list-inline text-center mt-5 mb-2">
+                                    <li class="list-inline-item text-muted font-italic"> Calorie Intake in last week </li>
+                                </ul>
+                            </div>
+
+                    <div class="col-lg-1"  >
+
+                    </div>
+
+
+                </div>
+                </div>
+            </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script>
+
+var densityCanvas = document.getElementById("bar-chart");
+
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 18;
+
+var densityData = {
+  label: 'Calorie Intake per day (kCal)',
+  data: [1427, 2243, 2414, 1933,  1326, 2687, 271]
+
+};
+
+var barChart = new Chart(densityCanvas, {
+  type: 'bar',
+  data: {
+    labels: ["Sat", "Sun", "Mon", "Tues", "Wed", "Thur", "Fri"],
+    datasets: [densityData]
+  }
+});
+
+    var config2 = {
+      type: 'bar',
+      data: {
+        datasets: [{
+          data: [2000,1500,1400],
+          backgroundColor: [
+            'yellow', 'orange', 'blue'
+          ],
+          label: 'Calorie Intake'
+        }],
+        labels: ['Fri', 'Sat', 'Sun', ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        legend: {
+            display: true
+            },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    stepSize: 20,
+                    suggestedMax: 3000
+                }
+            }]
+        }
+    }
+    };
+
+    window.onload = function() {
+      var ctx1 = document.getElementById('pie-chart').getContext('2d');
+      window.myPie = new Chart(ctx1, config1);
+
+      var ctx2 = document.getElementById('bar-chart').getContext('2d');
+      window.myPie = new Chart(ctx2, config2);
+    };
+
+  </script>
+
+
+{% endblock %}

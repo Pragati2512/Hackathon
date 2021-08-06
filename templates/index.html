@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <title> Diet Check | HomePage </title>
+{% endblock %}
+
+{% block body %}
+  <section class="contact-section" style = "padding: 10px 0 140px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title"> Welcome to our Website </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 col-sm-12" style="font-size: 18px;">
+                         Use DietCheck to easily measure and manage your diet so you get all the macronutrients
+                         and micronutrients (vitamins, minerals, omegas etc.) you need.
+                         <br>
+                         Find out whether you’re getting the right nutrients from what you’re eating and use our
+                         nutrition tool to simply adjust your diet.
+                         <br>
+                         <br>
+                    </div>
+                    <div class="col-5">
+                         <img src="{% static "img/f4.jpg" %}">  </img>
+                    </div>
+                    <br> <br>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <br> <br>
+                         <img src="{% static "img/f5.png" %}">  </img>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-11" style="font-size: 18px;">
+                          Actual daily nutrient requirements might be different based on your age, gender,
+                          level of physical activity, medical history and other factors. All data displayed
+                          on this site is for general informational purposes only and should not be considered a
+                          substitute of a doctor's advice. Please consult with your doctor before making any changes to your diet.
+                          <br>
+                          Nutrition labels presented on this site is for illustration purposes only.
+                          Food images may show a similar or a related product and are not meant to be used for food identification.
+                          Nutritional value of a cooked product is provided for the given weight of cooked food.
+                          Data from USDA National Nutrient Database for Standard Reference.
+                         <br>
+                         <br>
+                    </div>
+
+                </div>
+            </div>
+</section>
+{% endblock %}

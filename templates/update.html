@@ -1,0 +1,208 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <title> Diet Check | Update </title>
+{% endblock %}
+
+{% block body %}
+    <section class="contact-section" style = "padding: 10px 0 140px;">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title"> Update today's diet </h2>
+                        Mention the quantity of food item taken. <br>
+                        Don't forget to change the date if you want to enter data for previous date.<br><br>
+                    </div>
+                    <div class="col-lg-7">
+                        <form class="form-contact contact_form" action="" method="post" id="contactForm">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >
+                                        <label for="pas1" style="font-size: 16px;"> Date of Entry </label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <input class="form-control" name="date" id="subject" type="date" value="2020-09-18">
+                                    </div>
+                                </div>
+                            </div>
+<br>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Milk without Sugar </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Milk with Sugar </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Tea </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Coffee </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Egg (Boiled) </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Egg (Fried) </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Egg (Omlette) </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Bread Butter (2pc bread) </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Chapati </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Puri </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Parantha </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Bread Butter (2pc bread) </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Chapati </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Puri </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Parantha </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Rice (plain) </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Rice (butter) </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Dal(1 cup) </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group" >    <label for="pas1" style="font-size: 16px;"> Pani Puri(6pc) </label> </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group"> <input class="form-control" name="milk" id="subject" type="number" value=0> </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group mt-5">
+                                <button type="submit" class="button button-contactForm boxed-btn"> Update </button>
+                            </div>
+                            <br>
+                           Don't worry you will be allowed to add more items later also if you want.
+                        </form>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="{% static 'img/f3.jpg' %}" style="height: 350px; opacity: 0.8;" height=350px>   </img>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+{% endblock %}

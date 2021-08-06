@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <title> Diet Check | Profile </title>
+{% endblock %}
+
+{% block body %}
+  <section class="contact-section" style = "padding: 10px 0 140px;">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title"> My Profile </h2>
+                    </div>
+                    <div class="col-lg-7">
+
+                            <div class="row">
+                                <div class="col-3">
+                                        Name
+                                </div>
+                                <div class="col-7">
+                                     {{ data.person.name }}
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                        Gender
+                                </div>
+                                <div class="col-7">
+                                      {{ data.person.gender }}
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                        Age
+                                </div>
+                                <div class="col-7">
+                                      25 years
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-3">
+                                        Height
+                                </div>
+                                <div class="col-7">
+                                        165 cms
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                      Weight
+                                </div>
+                                <div class="col-7">
+                                    65 kgs
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                      Body Mass Index
+                                </div>
+                                <div class="col-7">
+                                       23.88
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-3">
+                                        Activity Level
+                                </div>
+                                <div class="col-7">
+                                        Highly Active
+                                </div>
+                            </div>
+Our results show that  <br>
+You should take around 2200 Kcal per day to keep yourself fit and healthy.
+                            <div class="form-group mt-5">
+                               <a href = "{% url 'home:update' %}">
+                                <button type="submit" class="button button-contactForm boxed-btn"> Update Today's Diet </button>
+                               </a>
+                            </div>
+
+                    </div>
+                    <div class="col-lg-5"  >
+                        <img src="{% static 'img/f3.jpg' %}" style="height: 350px; opacity: 0.8;" height=350px>   </img>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+</section>
+{% endblock %}

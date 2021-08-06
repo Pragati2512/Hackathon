@@ -1,0 +1,40 @@
+Age,gdr_cd,proc_cd,proc_brand_nm,Dose,Unit,CancerType,Height,HeightUnit,Weight,WeightUnit
+49,0,1,Epogen&reg,5,mg,60,60,IN,160,LBS
+5,0,1,Epogen&reg,1,Units,10,100,IN,100,LBS
+49,0,2,Granix&reg,5,mg,60,70,IN,160,LBS
+45,1,3,Somatuline Depot&reg,12,mg,90,5.75,IN,66,LBS
+55,1,4,Lupron Depot&reg;,100,mg,60,1,IN,1,LBS
+13,1,4,Lupron Depot&reg;,1,Units,60,55,IN,55,LBS
+55,1,4,Lupron Depot&reg;,5,mg,60,100,IN,55,LBS
+55,1,4,Lupron Depot&reg;,100,mg,60,12,IN,12,LBS
+43,1,4,Lupron Depot&reg;,50,mg,60,65,IN,167,LBS
+55,1,4,Lupron Depot&reg;,2,mg,60,68,IN,88,LBS
+52,0,4,Lupron Depot&reg;,1,Units,60,22,IN,22,LBS
+59,0,4,Lupron Depot&reg;,1,Units,60,25,IN,125,LBS
+11,1,5,Sandostatin&reg;,150,mg,60,65,IN,165,LBS
+55,1,6,Nplate&reg;,5,mg,60,100,IN,55,LBS
+14,0,7,Leukine&reg;,4,mg,60,23,IN,123,LBS
+14,0,7,Leukine&reg;,250,mg,60,23,IN,123,LBS
+14,0,7,Leukine&reg;,4,mg,60,23,IN,123,LBS
+44,1,8,Sylvant&reg;,300,mg,25,100,IN,55,LBS
+59,0,8,Sylvant&reg;,100,mg,40,100,IN,55,LBS
+44,1,8,Sylvant&reg;,90,mg,90,100,IN,55,LBS
+44,1,8,Sylvant&reg;,20,mg,90,100,IN,55,LBS
+59,0,8,Sylvant&reg;,500,mg,25,100,IN,55,LBS
+59,0,8,Sylvant&reg;,100,mg,90,100,IN,55,LBS
+20,0,9,Panretin&reg;,100,mg,80,12,IN,12,LBS
+5,0,9,Panretin&reg;,1,Units,35,100,IN,100,LBS
+20,0,9,Panretin&reg;,1,Units,80,12,IN,12,LBS
+59,0,9,Panretin&reg;,250,mg,100,44,IN,123,LBS
+20,0,9,Panretin&reg;,25,mg,40,12,IN,12,LBS
+59,0,9,Panretin&reg;,560,mg,110,100,IN,120,LBS
+59,0,9,Panretin&reg;,2,Units,20,12,IN,12,LBS
+20,0,9,Panretin&reg;,150,mg,80,12,IN,12,LBS
+59,0,9,Panretin&reg;,150,mg,90,12,IN,12,LBS
+59,0,9,Panretin&reg;,250,mg,90,44,IN,122,LBS
+59,0,9,Panretin&reg;,5,mg,90,12,IN,12,LBS
+59,0,0,Revcovi&trade;,250,mg,100,44,IN,123,LBS
+20,0,0,Revcovi&trade;,25,mg,40,12,IN,12,LBS
+59,0,0,Revcovi&trade;,5,Units,20,12,IN,12,LBS
+20,0,0,Revcovi&trade;,150,mg,80,12,IN,12,LBS
+59,0,0,Revcovi&trade;,150,mg,90,12,IN,12,LBS
